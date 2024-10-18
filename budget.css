@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Tips Section */
+.budget-tips {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.budget-tips h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.tip {
+    background-color: #e9f5f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tip h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.tip p {
+    font-size: 1.1rem;
+}
+
+/* Hover Effects */
+.tip:hover {
+    transform: translateY(-5px);
+    background-color: #d3f3f2;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.cta-section button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section button:hover {
+    background-color: #138f99;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .tips {
+        padding: 0 20px;
+    }
+
+    .tip {
+        padding: 15px;
+    }
+}
